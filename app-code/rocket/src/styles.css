@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: sans-serif;
+}
+
+.rocket-data {
+    width: 80%;
+    height: 200px;
+    background: aqua;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .rocket-data-motor {
+    height: 200px;
+    background: aquamarine;
+    float: left;
+  }
+
+  .rocket-data-cockpit {
+    height: 200px;
+    background: green;
+    float: left;
+  }
+  
