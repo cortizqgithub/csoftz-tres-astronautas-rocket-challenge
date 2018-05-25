@@ -1,3 +1,17 @@
+/*----------------------------------------------------------------------------*/
+/* Source File:   PROTRACTOR.CONF.JS                                          */
+/* Description:   Protractor testing configuration                            */
+/* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
+/* Date:          May.24/2018                                                 */
+/* Last Modified: May.24/2018                                                 */
+/* Version:       1.1                                                         */
+/* Copyright (c), 2018 CSoftZ                                                 */
+/*----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------
+ History
+ May.24/2018  COQ  File created.
+ -----------------------------------------------------------------------------*/
+
 // Protractor configuration file, see link for more information
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
