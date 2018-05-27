@@ -16,7 +16,11 @@ import { Routes, RouterModule } from "@angular/router";
 
 import { FuselageComponent } from "./fuselage/fuselage.component";
 
-const routes: Routes = [{ path: "", component: FuselageComponent }];
+const routes: Routes = [
+  { path: "", component: FuselageComponent },
+  { path: "inicio", component: FuselageComponent },
+  { path: "home", component: FuselageComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
