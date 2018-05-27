@@ -3,7 +3,7 @@
 /* Description:   Used to bootstrap an Angular Application                    */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
 /* Date:          May.24/2018                                                 */
-/* Last Modified: May.25/2018                                                 */
+/* Last Modified: May.27/2018                                                 */
 /* Version:       1.1                                                         */
 /* Copyright (c), 2018 CSoftZ                                                 */
 /*----------------------------------------------------------------------------*/
