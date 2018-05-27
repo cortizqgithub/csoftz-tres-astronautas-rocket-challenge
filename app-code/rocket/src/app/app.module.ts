@@ -19,13 +19,15 @@ import { AppComponent } from "./app.component";
 import { FuselageComponent } from "./fuselage/fuselage.component";
 import { MotorComponent } from "./motor/motor.component";
 import { CockpitComponent } from "./cockpit/cockpit.component";
+import { HomeComponent } from "./home/home.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     FuselageComponent,
     MotorComponent,
-    CockpitComponent
+    CockpitComponent,
+    HomeComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
