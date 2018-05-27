@@ -15,8 +15,14 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
 import { FuselageComponent } from "./fuselage/fuselage.component";
+import { PlanetsComponent } from "./planets/planets.component";
 
-const routes: Routes = [{ path: "", component: FuselageComponent }];
+const routes: Routes = [
+  { path: "", component: FuselageComponent },
+  { path: "inicio", component: FuselageComponent },
+  { path: "home", component: FuselageComponent },
+  { path: "planets", component: PlanetsComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
