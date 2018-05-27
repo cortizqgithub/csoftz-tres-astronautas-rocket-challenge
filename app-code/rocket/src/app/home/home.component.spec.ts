@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------------*/
-/* Source File:   APP-ROUTING.MODULE.TS                                       */
-/* Description:   Used to define application routing (page navigation)        */
+/* Source File:   HOME.COMPONENT.SPEC.TS                                      */
+/* Description:   Defines unit tests for component.                           */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
 /* Date:          May.27/2018                                                 */
 /* Last Modified: May.27/2018                                                 */
@@ -11,20 +11,27 @@
  History
  May.27/2018  COQ  File created.
  -----------------------------------------------------------------------------*/
-import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { FuselageComponent } from "./fuselage/fuselage.component";
-import { HomeComponent } from "./home/home.component";
+import { HomeComponent } from "./home.component";
 
-const routes: Routes = [
-  { path: "", component: HomeComponent },
-  { path: "inicio", component: HomeComponent },
-  { path: "home", component: HomeComponent }
-];
+describe("HomeComponent", () => {
+  let component: HomeComponent;
+  let fixture: ComponentFixture<HomeComponent>;
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule {}
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [HomeComponent]
+    }).compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(HomeComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it("should create", () => {
+    expect(component).toBeTruthy();
+  });
+});
