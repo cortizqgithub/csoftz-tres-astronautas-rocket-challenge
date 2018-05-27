@@ -14,6 +14,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
+import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { FuselageComponent } from "./fuselage/fuselage.component";
 import { MotorComponent } from "./motor/motor.component";
@@ -28,7 +29,7 @@ import { PlanetsComponent } from "./planets/planets.component";
     CockpitComponent,
     PlanetsComponent
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
