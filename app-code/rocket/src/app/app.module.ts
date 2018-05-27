@@ -3,7 +3,7 @@
 /* Description:   Used to bootstrap an Angular Application                    */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
 /* Date:          May.24/2018                                                 */
-/* Last Modified: May.24/2018                                                 */
+/* Last Modified: May.25/2018                                                 */
 /* Version:       1.1                                                         */
 /* Copyright (c), 2018 CSoftZ                                                 */
 /*----------------------------------------------------------------------------*/
@@ -18,13 +18,15 @@ import { AppComponent } from "./app.component";
 import { FuselageComponent } from "./fuselage/fuselage.component";
 import { MotorComponent } from "./motor/motor.component";
 import { CockpitComponent } from "./cockpit/cockpit.component";
+import { PlanetsComponent } from "./planets/planets.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     FuselageComponent,
     MotorComponent,
-    CockpitComponent
+    CockpitComponent,
+    PlanetsComponent
   ],
   imports: [BrowserModule],
   providers: [],
