@@ -3,22 +3,23 @@
 }
 
 .rocket-data {
-    width: 80%;
-    height: 200px;
-    background: aqua;
+    width: 52%;
+    height: 154px;
     margin: auto;
-    padding: 10px;
+    position: absolute;
+    top: 339px;
+    left: 130px;
   }
   
   .rocket-data-motor {
-    height: 200px;
-    background: aquamarine;
+    height: 154px;
+    width: 50%;
     float: left;
   }
 
   .rocket-data-cockpit {
-    height: 200px;
-    background: green;
+    height: 154px;
+    width: 50%;
     float: left;
   }
   

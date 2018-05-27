@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------------*/
-/* Source File:   APP-ROUTING.MODULE.TS                                       */
-/* Description:   Used to define application routing (page navigation)        */
+/* Source File:   HOME.COMPONENT.TS                                           */
+/* Description:   View component for HOME Page                                */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
 /* Date:          May.27/2018                                                 */
 /* Last Modified: May.27/2018                                                 */
@@ -11,16 +11,15 @@
  History
  May.27/2018  COQ  File created.
  -----------------------------------------------------------------------------*/
-import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
+import { Component, OnInit } from "@angular/core";
 
-import { FuselageComponent } from "./fuselage/fuselage.component";
-import { HomeComponent } from "./home/home.component";
-
-const routes: Routes = [{ path: "", component: FuselageComponent }];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+@Component({
+  selector: "app-home",
+  templateUrl: "./home.component.html",
+  styleUrls: ["./home.component.css"]
 })
-export class AppRoutingModule {}
+export class HomeComponent implements OnInit {
+  constructor() {}
+
+  ngOnInit() {}
+}
