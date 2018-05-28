@@ -1,0 +1,136 @@
+= csoftz-tres-astronautas-rocket-challenge README
+
+V1.0.0-May.28/2018
+
+= Introduction
+This challenge is thought to measure your problem abstraction capacity and solution generation. We don't 
+expect you to be an *_Angular_* book, thus any guide or documentation you can use is allowed. So give your
+best push for the workshop at hand.
+
+= The challenge
+For this workshop challenge you have to accomplished three tasks. Each of them is described in the following
+sections, and for each task you will find a branch, and the _Master_ branch will hold all the tasks combined:
+
+* *sol-part-i* Holds all the required files to the *First Task*.
+* *sol-part-ii* Holds all the required files to the *Second Task*.
+* *sol-part-iii* Holds all the required files to the *Third Task*.
+
+[NOTE]
+====
+This very README.ADOC file is written tailored for each task part, but only the _Master_ branch 
+will hold all the tasks combined. And for such situation a README-PART.ADOC is created should all branch 
+be merge with master. The idea is for each branch to have only its related files, showcasing a 
+separate folder.
+====
+
+== First Task
+You are in charge of our spacecraft and we need you to assemble the three views you have
+been assigned: The _fuselage_, the _motor_ and the _cockpit_. You must consider the _fuselage_
+view as a view of higher hierarchy, includes the _motor_ and the _cockpit_.
+Remember you cannot change the the view structure, the integration must be made
+using *_Angular*_ and not changing the HTML of the views. This integrated _fuselage_  view
+must be accessed with a root path of _"/"_ and the path _"inicio"_. Example,
+localhost:4200 y localhost:4200/inicio.
+
+== Second Task
+The connection between the _motor_ and the _cockpit_ is of vital importance. The spacecraft needs
+that when the astronaut accesses the route *_"/control"_*, these two views are shown side by side. In 
+the _cockpit_ you will find an ignition button (named *_IGNITE_*) and in the _motor_ you will find a number that starts in 10 
+and must decrease in one unit for each second since the astronaut click the ignition button.
+
+[NOTE]
+====
+Here the counter must run from 10 to 0 in steps of 1 units per second. This effect only occurs when user
+clicks the _IGNITE_ button.
+====
+
+[IMPORTANT]
+====
+When you read the implementation details in the source code, you will find with regard to the description
+above that what should contain the _motor_ in code is intended for the _cockpit_ in the description, and
+so is for the other view. 
+
+It would require a lot of time to change the content and functionality for each one. It will be left for
+a future release, should the client allows this time, anyway the contents and functionality is interchanged, 
+it achieves what they are meant to be.
+====
+
+== Third Task
+In the last challenge of this test, you will be in charge of the sighting of planets. As you can see, 
+in the _fuselage_ there is a text that says *"Planeta X avistado a Y grados"*. The idea is 
+that through the route that the astronaut enters in his browser, the *_"X"_* in that text is 
+replaced by a parameter that he chooses. The main route of this view should start with *_"/planets"_*, so 
+for example, if the astronaut enters *_"/planets/mercurio"_*, the text of the _fuselage_ view should 
+change to "Planeta Mercurio avistado a Y grados".
+
+To solve this last part of the challenge you must bear in mind that the only planets that the astronaut
+can enter in the browser are the ones exposed int this REST service: 
+
+http://demo0761779.mockable.io/angularspaceship/planets
+
+As you can see, in this service there is related information to the solar system planets, 
+specifically: An image for each one of them and the degrees to which it is from the current spacecraft positon.
+The idea is that when the astronaut enter the planet in the route, you consume this REST service and change
+the "Y" for degrees in that REST Service response. So that the route _"/planets/mercurio"_ shows in the _fuselage_
+view the text *_"Planeta mercurio avistado a 25.0000 grados"_*, assuming that the REST responds that 
+_mercurio_ is at 25 degrees. Notice that the deegrees must show 4 decimal units, not more not less, 
+for astronauts, accuracy is very important.
+
+Finally, images are everything in this spatial mission, thus it is very important that you show
+the planet image as a background image for the containing view. You must create an _Angular_ service in
+order to consume this REST service.
+
+= Implementation
+As it is required to use _Angular_ V6, the solution is initially created usint the _Angular CLI_ thus 
+it is the structure that all folders holds according to the _Angular_ guidelines. For each _git_ branch
+it will hold only related files and route paths as per task.
+
+All unit tests are the ones that _Angluar CLI_ generates, and at this stage they may fail, 
+in a future release this will be revised.
+
+[NOTE]
+====
+No Unit tests done!
+====
+
+== sol-part-i Branch Components
+Following is a description for the contents in this branch.
+
+=== View Components
+* *cockpit* Holds the view contents (reusable) to show parts of the _cockpit_.
+* *fuselage* The parent of the _motor_ and _cockpit_ components.
+* *home* The initial view HTML contents for _fuselage_, _motor_, and _cockpit_ view integration.
+* *motor* Holds the view contents (reusable) to show parts of the _motor_.
+
+=== Configuration
+* *app-routing.module.ts* If you open its contents you will find to which routes this application responds.
+* *app.module.ts* Defines all _Angluar_ modules the app requires.
+
+
+= Essential References
+* *Angular Docs* (https://angular.io/docs)
+* *Planets API Rest* (http://demo0761779.mockable.io/angularspaceship/planets)
+* *Github* (https://github.com)
+* *GitHub Pages* (https://pages.github.com)
+* *GitHub Markdown* (https://guides.github.com/features/mastering-markdown/)
+* *Asciidoctor* (https://asciidoctor.org/)
+
+[NOTE]
+====
+Use of Asciidoctor text markup is better than Markdown as it is more rich and publishing related.
+Thus all documentation herein is in this format. And if you write the README.ADOC file then _Github_
+is able to interpret and show you its contents rendered in HTML.
+====
+
+= References
+During the development of this challenge I have had to use the 
+following links in order to achieve the required goal.
+
+* *Adding CSS and JavaScript to an Angular CLI Project* (https://medium.com/@davembush/adding-css-and-javascript-to-an-angular-cli-project-2b843a8283f3)
+* *Transform JSON to TypeScript* (https://transform.now.sh/json-to-ts-interface/)
+* *Creating Angular Projects With Angular CLI* (https://medium.com/codingthesmartway-com-blog/creating-angular-projects-with-angular-cli-e32b2cb486da)
+* *Compartiendo info entre componentes en Angular (Spanish)* (https://blog.ng-classroom.com/blog/angular/compartiendo-info-componentes/)
+* *Angular Router: Query Parameters* (https://alligator.io/angular/query-parameters/)
+* *Introduction to Angular's HttpClient* (https://alligator.io/angular/httpclient-intro/)
+* *Angular HTTP Client - Quickstart Guide* (https://blog.angular-university.io/angular-http/)
+
