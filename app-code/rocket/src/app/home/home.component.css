@@ -1,0 +1,72 @@
+.space {
+  height: 100%;
+}
+
+.rocket {
+  height: 40em;
+  background: url(/assets/spaceship.svg) no-repeat center;
+}
+
+.tresA {
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  right: 1%;
+}
+
+.tresA > img {
+  float: right;
+  width: 70%;
+}
+
+.status {
+  height: 10%;
+  text-align: center;
+}
+
+.status > h3 {
+  padding-top: 2%;
+  text-shadow: 0px 0px 20px #fff;
+  font-size: 24px;
+}
+
+.motor {
+  height: 17%;
+  width: 17%;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.round-button {
+  display: block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin-left: 33px;
+  margin-top: 23px;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  color: #f5f5f5;
+  text-align: center;
+  text-decoration: none;
+  background: #ff4747;
+  box-shadow: 0 0 3px gray;
+  font-size: 20px;
+  font-weight: bold;
+}
+.round-button:hover {
+  background-color: crimson;
+}
+
+.cabin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter {
+  font-size: 7em;
+  vertical-align: middle;
+  color: #ff4747;
+}

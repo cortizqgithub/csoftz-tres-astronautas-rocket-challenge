@@ -11,7 +11,9 @@
  History
  May.24/2018  COQ  File created.
  -----------------------------------------------------------------------------*/
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Output, EventEmitter } from "@angular/core";
+
+import { MessageService } from "../message.service";
 
 @Component({
   selector: "app-motor",
@@ -19,7 +21,13 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./motor.component.css"]
 })
 export class MotorComponent implements OnInit {
-  constructor() {}
+  @Output() onIgnite = new EventEmitter();
+
+  constructor(private messageService: MessageService) {}
+
+  igniteClick(): void {
+    this.messageService.filter("Register click Ignite");
+  }
 
   ngOnInit() {}
 }

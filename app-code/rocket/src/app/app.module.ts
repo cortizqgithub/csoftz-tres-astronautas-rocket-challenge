@@ -20,6 +20,7 @@ import { FuselageComponent } from "./fuselage/fuselage.component";
 import { MotorComponent } from "./motor/motor.component";
 import { CockpitComponent } from "./cockpit/cockpit.component";
 import { PlanetsComponent } from "./planets/planets.component";
+import { HomeComponent } from "./home/home.component";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PlanetsComponent } from "./planets/planets.component";
     FuselageComponent,
     MotorComponent,
     CockpitComponent,
-    PlanetsComponent
+    PlanetsComponent,
+    HomeComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

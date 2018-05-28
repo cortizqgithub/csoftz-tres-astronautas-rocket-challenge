@@ -1,24 +1,25 @@
 * {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 .rocket-data {
-    width: 80%;
-    height: 200px;
-    background: aqua;
-    margin: auto;
-    padding: 10px;
-  }
-  
-  .rocket-data-motor {
-    height: 200px;
-    background: aquamarine;
-    float: left;
-  }
+  width: 52%;
+  height: 154px;
+  margin: auto;
+  position: absolute;
+  top: 339px;
+  left: 130px;
+}
 
-  .rocket-data-cockpit {
-    height: 200px;
-    background: green;
-    float: left;
-  }
-  
+.rocket-data-motor {
+  cursor: pointer;
+  height: 154px;
+  width: 50%;
+  float: left;
+}
+
+.rocket-data-cockpit {
+  height: 154px;
+  width: 50%;
+  float: left;
+}
