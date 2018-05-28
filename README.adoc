@@ -162,7 +162,7 @@ Now to this project the commands would be:
 
 [source, terminal]
 ----
-$ ng build --prod --base-href "https://cortizqgithub.github.io/csoftz-tres-astronautas-rocket-challenge/"
+$ ng build --prod --base-href "https://cortizqgithub.github.io/csoftz-tres-astronautas-rocket-challenge"
 $ ngh
 ----
 
