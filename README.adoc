@@ -110,9 +110,18 @@ Following is a description for the contents in this branch.
 * *planetinfo.ts* Holds the TypeScript representation of the REST API Json format returned.
 * *planets.service.ts* Uses the HTTP Client to retrieve the REST API Json data for given REST end-point.
 
+== sol-part-i Branch Components
+Following is a description for the contents in this branch.
 
+=== View Components
+* *cockpit* Holds the view contents (reusable) to show parts of the _cockpit_.
+* *fuselage* The parent of the _motor_ and _cockpit_ components.
+* *home* The initial view HTML contents for _fuselage_, _motor_, and _cockpit_ view integration.
+* *motor* Holds the view contents (reusable) to show parts of the _motor_.
 
-
+=== Configuration
+* *app-routing.module.ts* If you open its contents you will find to which routes this application responds.
+* *app.module.ts* Defines all _Angluar_ modules the app requires.
 
 
 = Essential References
