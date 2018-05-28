@@ -123,6 +123,22 @@ Following is a description for the contents in this branch.
 * *app-routing.module.ts* If you open its contents you will find to which routes this application responds.
 * *app.module.ts* Defines all _Angluar_ modules the app requires.
 
+== sol-part-ii Branch Components
+Following is a description for the contents in this branch.
+
+=== View Components
+* *cockpit* Holds the view contents (reusable) to show parts of the _cockpit_.
+* *fuselage* The parent of the _motor_ and _cockpit_ components.
+* *home* The initial view HTML contents for _fuselage_, _motor_, and _cockpit_ view integration.
+* *motor* Holds the view contents (reusable) to show parts of the _motor_.
+
+=== Configuration
+* *app-routing.module.ts* If you open its contents you will find to which routes this application responds.
+* *app.module.ts* Defines all _Angluar_ modules the app requires.
+* *message.service.ts* Used to communicate events between _motor_ and _cockpit_ view components.
+
+== sol-part-iii Branch Components
+It is the same contents as the _Master_ branch but _resources_ folder.
 
 = Essential References
 * *Angular Docs* (https://angular.io/docs)
