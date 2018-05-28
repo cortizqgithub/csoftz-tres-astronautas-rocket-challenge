@@ -14,10 +14,17 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
-import { FuselageComponent } from "./fuselage/fuselage.component";
 import { HomeComponent } from "./home/home.component";
+import { FuselageComponent } from "./fuselage/fuselage.component";
+import { PlanetsComponent } from "./planets/planets.component";
 
-const routes: Routes = [{ path: "", component: FuselageComponent }];
+const routes: Routes = [
+  { path: "", component: HomeComponent },
+  { path: "inicio", component: HomeComponent },
+  { path: "home", component: HomeComponent },
+  { path: "control", component: FuselageComponent},
+  { path: "planets", component:PlanetsComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
