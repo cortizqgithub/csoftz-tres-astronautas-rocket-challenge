@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------------*/
-/* Source File:   APP-ROUTING.MODULE.TS                                       */
-/* Description:   Used to define application routing (page navigation)        */
+/* Source File:   MESSAGE.SERVICE.TS                                          */
+/* Description:   Service to communicate events between components.           */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
 /* Date:          May.27/2018                                                 */
 /* Last Modified: May.27/2018                                                 */
@@ -11,21 +11,22 @@
  History
  May.27/2018  COQ  File created.
  -----------------------------------------------------------------------------*/
-import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
+import { Injectable } from "@angular/core";
+import { Subject, Observable } from "rxjs";
 
-import { HomeComponent } from "./home/home.component";
-import { FuselageComponent } from "./fuselage/fuselage.component";
-
-const routes: Routes = [
-  { path: "", component: HomeComponent },
-  { path: "inicio", component: HomeComponent },
-  { path: "home", component: HomeComponent },
-  { path: "control", component: FuselageComponent}
-];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+@Injectable({
+  providedIn: "root"
 })
-export class AppRoutingModule {}
+export class MessageService {
+  private listeners = new Subject<any>();
+
+  listen(): Observable<any> {
+    return this.listeners.asObservable();
+  }
+
+  filter(filterBy: string) {
+    this.listeners.next(filterBy);
+  }
+
+  constructor() {}
+}

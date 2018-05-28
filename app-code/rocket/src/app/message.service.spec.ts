@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------------*/
-/* Source File:   APP-ROUTING.MODULE.TS                                       */
-/* Description:   Used to define application routing (page navigation)        */
+/* Source File:   MESSAGE.SERVICE.SPEC.TS                                     */
+/* Description:   Service to communicate events between components. (Tests)   */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
 /* Date:          May.27/2018                                                 */
 /* Last Modified: May.27/2018                                                 */
@@ -11,21 +11,21 @@
  History
  May.27/2018  COQ  File created.
  -----------------------------------------------------------------------------*/
-import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
+ import { TestBed, inject } from "@angular/core/testing";
 
-import { HomeComponent } from "./home/home.component";
-import { FuselageComponent } from "./fuselage/fuselage.component";
+import { MessageService } from "./message.service";
 
-const routes: Routes = [
-  { path: "", component: HomeComponent },
-  { path: "inicio", component: HomeComponent },
-  { path: "home", component: HomeComponent },
-  { path: "control", component: FuselageComponent}
-];
+describe("MessageService", () => {
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      providers: [MessageService]
+    });
+  });
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule {}
+  it(
+    "should be created",
+    inject([MessageService], (service: MessageService) => {
+      expect(service).toBeTruthy();
+    })
+  );
+});
