@@ -3,7 +3,7 @@
 /* Description:   View component to present the Cockpit part of the Rocket    */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
 /* Date:          May.24/2018                                                 */
-/* Last Modified: May.24/2018                                                 */
+/* Last Modified: May.28/2018                                                 */
 /* Version:       1.1                                                         */
 /* Copyright (c), 2018 CSoftZ                                                 */
 /*----------------------------------------------------------------------------*/
@@ -22,7 +22,7 @@ import { Subscription, timer } from "rxjs";
   styleUrls: ["./cockpit.component.css"]
 })
 export class CockpitComponent implements OnInit {
-  private igniteCounter: number;
+  public igniteCounter: number;
   private subscription: Subscription;
 
   constructor(private messageService: MessageService) {

@@ -140,6 +140,33 @@ Following is a description for the contents in this branch.
 == sol-part-iii Branch Components
 It is the same contents as the _Master_ branch but _resources_ folder.
 
+= Deploying to Github Pages
+Install *Angular Cli GitHub Pages* plugin (https://github.com/angular-schule/angular-cli-ghpages).
+
+From its documentation it reads.
+
+[source, terminal]
+----
+$ npm i -g angular-cli-ghpages
+----
+
+Now use the following commands to publish to *GitHub Pages*.
+
+[source, terminal]
+----
+$ ng build --prod --base-href "https://USERNAME.github.io/REPOSITORY/"
+$ ngh [OPTIONS]
+----
+
+Now to this project the commands would be:
+
+[source, terminal]
+----
+$ ng build --prod --base-href "https://cortizqgithub.github.io/csoftz-tres-astronautas-rocket-challenge/"
+$ ngh
+----
+
+
 = Essential References
 * *Angular Docs* (https://angular.io/docs)
 * *Planets API Rest* (http://demo0761779.mockable.io/angularspaceship/planets)
@@ -166,4 +193,5 @@ following links in order to achieve the required goal.
 * *Angular Router: Query Parameters* (https://alligator.io/angular/query-parameters/)
 * *Introduction to Angular's HttpClient* (https://alligator.io/angular/httpclient-intro/)
 * *Angular HTTP Client - Quickstart Guide* (https://blog.angular-university.io/angular-http/)
+* *Deploying an Angular App to Github Pages* (https://alligator.io/angular/deploying-angular-app-github-pages/)
 

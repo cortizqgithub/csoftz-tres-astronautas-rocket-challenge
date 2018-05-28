@@ -3,7 +3,7 @@
 /* Description:   View compomponent to view planets from Rocket               */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
 /* Date:          May.25/2018                                                 */
-/* Last Modified: May.25/2018                                                 */
+/* Last Modified: May.28/2018                                                 */
 /* Version:       1.1                                                         */
 /* Copyright (c), 2018 CSoftZ                                                 */
 /*----------------------------------------------------------------------------*/
@@ -22,9 +22,9 @@ import { ActivatedRoute } from "@angular/router";
   styleUrls: ["./planets.component.css"]
 })
 export class PlanetsComponent implements OnInit, OnDestroy {
-  private planetName: string;
-  private planetDegree: number;
-  private planetImg: string;
+  public planetName: string;
+  public planetDegree: number;
+  public planetImg: string;
 
   private assignPlanetInfoFor(planet: String, planetInfo: PlanetInfo) {
     this.planetName = "";
