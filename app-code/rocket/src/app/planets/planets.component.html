@@ -1,3 +1,17 @@
-<p>
-    Planets Works!
-</p>
+<!-- ¡Créditos al autor por la imagen del cohete! <a href='http://dryicons.com/icon/spaceship-icon-5255'> Icon by Dryicons </a> -->
+<div class="space" [style.background]="'url(' + planetImg + ')'">
+    <section class="status">
+        <h3>¡Planeta '{{planetName}}' avistado a '{{planetDegree | number:'1.4-4'}}' grados!</h3>
+    </section>
+
+    <section class="rocket">
+        <div class="rocket-data">
+            <app-motor></app-motor>
+            <app-cockpit></app-cockpit>
+        </div>
+    </section>
+
+    <div class="tresA">
+        <img src="assets/logo.png" alt="3 Astronauts">
+    </div>
+</div>

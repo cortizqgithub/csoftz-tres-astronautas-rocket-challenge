@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: "inicio", component: HomeComponent },
   { path: "home", component: HomeComponent },
   { path: "control", component: FuselageComponent},
-  { path: "planets", component:PlanetsComponent}
+  { path: "planets/:id", component:PlanetsComponent}
 ];
 
 @NgModule({

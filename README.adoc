@@ -12,3 +12,6 @@ following links in order to achieve the required goal.
 * *Transform JSON to TypeScript* (https://transform.now.sh/json-to-ts-interface/)
 * *Creating Angular Projects With Angular CLI* (https://medium.com/codingthesmartway-com-blog/creating-angular-projects-with-angular-cli-e32b2cb486da)
 * *Compartiendo info entre componentes en Angular (Spanish)* (https://blog.ng-classroom.com/blog/angular/compartiendo-info-componentes/)
+* *Angular Router: Query Parameters* (https://alligator.io/angular/query-parameters/)
+* *Introduction to Angular's HttpClient* (https://alligator.io/angular/httpclient-intro/)
+* *Angular HTTP Client - Quickstart Guide* (https://blog.angular-university.io/angular-http/)
