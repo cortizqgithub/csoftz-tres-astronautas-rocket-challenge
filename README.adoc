@@ -110,7 +110,7 @@ Following is a description for the contents in this branch.
 * *planetinfo.ts* Holds the TypeScript representation of the REST API Json format returned.
 * *planets.service.ts* Uses the HTTP Client to retrieve the REST API Json data for given REST end-point.
 
-== sol-part-iii branch
+== sol-part-iii Branch Components
 It is the same contents as the _Master_ branch but _resources_ folder.
 
 = Essential References
