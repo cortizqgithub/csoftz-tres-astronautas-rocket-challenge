@@ -26,3 +26,6 @@
 .round-button:hover {
   background-color: crimson;
 }
+.running {
+  background: gray;
+}

@@ -17,9 +17,9 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { FuselageComponent } from "./fuselage/fuselage.component";
-import { MotorComponent } from "./motor/motor.component";
-import { CockpitComponent } from "./cockpit/cockpit.component";
+import { FuselageComponent } from "./containers/fuselage/fuselage.component";
+import { MotorComponent } from "./components/motor/motor.component";
+import { CockpitComponent } from "./components/cockpit/cockpit.component";
 import { PlanetsComponent } from "./planets/planets.component";
 import { HomeComponent } from "./home/home.component";
 

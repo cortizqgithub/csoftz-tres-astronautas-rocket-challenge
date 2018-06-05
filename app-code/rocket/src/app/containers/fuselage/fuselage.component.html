@@ -3,11 +3,14 @@
   <section class="status">
     <h3>¡Planeta X avistado a Y grados!</h3>
   </section>
-
+  <a routerLink="/">Home</a>
   <section class="rocket">
     <div class="rocket-data">
-      <app-motor></app-motor>
-      <app-cockpit></app-cockpit>
+      <app-motor [motorState]="motorState" (onIgnite)="listenMotor($event)"></app-motor>
+      <app-cockpit
+        [igniteDelay]="igniteDelay"
+        [motorState]="motorState"
+        [motorStateChange]="motorStateChange"></app-cockpit>
     </div>
   </section>
 
@@ -15,3 +18,7 @@
     <img src="assets/logo.png" alt="3 Astronauts">
   </div>
 </div>
+<pre>
+  {{motorState}}
+  {{igniteDelay}}
+</pre>

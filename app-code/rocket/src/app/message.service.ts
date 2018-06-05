@@ -13,11 +13,17 @@
  -----------------------------------------------------------------------------*/
 import { Injectable } from "@angular/core";
 import { Subject, Observable } from "rxjs";
+import { MotorStates } from './app.types'
 
 @Injectable({
   providedIn: "root"
 })
 export class MessageService {
+
+
+  public igniteDelay = 20;
+  public motorState: MotorStates = 'STOPPED'
+
   private listeners = new Subject<any>();
 
   listen(): Observable<any> {
