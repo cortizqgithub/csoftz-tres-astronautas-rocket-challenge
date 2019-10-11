@@ -1,11 +1,21 @@
 = csoftz-tres-astronautas-rocket-challenge README
 
-V1.0.0-May.28/2018
+20191011-V1.0.2
 
 = Introduction
 This challenge is thought to measure your problem abstraction capacity and solution generation. We don't 
 expect you to be an *_Angular_* book, thus any guide or documentation you can use is allowed. So give your
 best push for the workshop at hand.
+
+[NOTE]
+====
+I met with @beeman to discuss the project and he kindly advised me some refactorings to the project which I now include in this MASTER branch.
+Basically there are some 
+fixes and folder structure changes.
+
+A dedicated branch for his contribution was created. You can view his changes at 'beeman-at-juan-valdez-session'. 
+====
+
 
 = The challenge
 For this workshop challenge you have to accomplished three tasks. Each of them is described in the following
